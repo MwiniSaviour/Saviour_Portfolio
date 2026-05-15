@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 
 const highlight = [

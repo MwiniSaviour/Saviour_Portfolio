@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react"
 import { useEffect, useState } from "react";
@@ -26,7 +27,7 @@ export const Navbar = () => {
   return <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
     <nav className="container mx-auto px-6 flex items-center justify-between">
       <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-        <img src="./quantlab.png" alt="logo" className="w-25 h-8 rounded-full" />
+        <img src="./logo.png" alt="logo" className="w-25 h-8 rounded-full" />
       </a>
 
       {/* Desktop nav */}

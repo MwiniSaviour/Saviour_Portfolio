@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useState } from "react";
 
@@ -47,7 +48,7 @@ export const Testimonials = () => {
     setActiveIdx((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   }
   return (
-    <section id="Testimonials" className="py-32 relative overflow-hidden">
+    <section id="Testimonials" className="py-10 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 w-200 h-200 rounded-full blur-3xl
                     bg-primary/5 -translate-x-1/2 -translate-y-1/2 "/>
 

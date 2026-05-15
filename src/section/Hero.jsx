@@ -76,7 +76,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-mute-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi I'm Saviour Mwini — a software engineer & graphic designer specializing in
+                Hi I'm Saviour Mwini — a graphic designer & a software engineer, specializing in
                 React, Next.js, and Typescript. I build scalable, performant
                 Web applications that users love.
               </p>
@@ -105,7 +105,7 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400 text-center align-center">
               <span className="text-sm text-muted-foreground">Follow Me: </span>
               {[
-                { icon: Github, href: "#" },
+                { icon: Github, href: "https://github.com/MwiniSaviour?tab=repositories" },
                 { icon: Linkedin, href: "https://linkedin.com/in/saviour/|78", target: "_blank", rel: "noopener noreferrer" },
                 { icon: Twitter, href: "https://x.com/NewtonMwi82427", target: "_blank", rel: "noopener noreferrer" },
               ].map((social, idx) => (
