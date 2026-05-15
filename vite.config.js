@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
-import prerender from 'vite-prerender-plugin';
-
+import { vitePrerenderPlugin } from 'vite-prerender-plugin';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
