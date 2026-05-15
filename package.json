@@ -30,7 +30,6 @@
     "sharp": "^0.34.5",
     "svgo": "^4.0.1",
     "vite": "^8.0.1",
-    "vite-plugin-image-optimizer": "^2.0.3",
-    "vite-prerender-plugin": "^0.5.13"
+    "vite-plugin-image-optimizer": "^2.0.3"
   }
 }
