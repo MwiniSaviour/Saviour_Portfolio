@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
-import VitePrerender from 'vite-plugin-prerender'
+import prerender from 'vite-prerender-plugin';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -15,10 +15,10 @@ export default defineConfig({
     webp: { quality: 75 },
     avif: { quality: 70 },
   }),
-  VitePrerender({
-    staticDir: path.join(__dirname, 'dist'),
-    routes: ['/', '/about', '/projects', '/contact'],
-  })
+  prerender({
+    // using the route path to compiled into flat HTML since everything is on a single page section.
+    routes: ['/'],
+  }),
   ],
   resolve: {
     alias: {
